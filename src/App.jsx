@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Programs from "./components/Programs";
+import Films from "./components/Films";
 import Moments from "./components/Moments";
 import Reviews from "./components/Reviews";
 import Location from "./components/Location";
@@ -16,6 +17,7 @@ export default function App() {
       <Hero />
       <About />
       <Programs />
+      <Films />
       <Moments />
       <Reviews />
       <Location />

@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
-import { GiStarMedal, GiMusicalNotes } from "react-icons/gi";
-import { FiHeart, FiCamera } from "react-icons/fi";
-import { programs, whatsappLink } from "../data";
+import { GiRingBox } from "react-icons/gi";
+import { FaHeart, FaPeopleGroup, FaGraduationCap } from "react-icons/fa6";
+import { FiRepeat } from "react-icons/fi";
+import { programs, danceStyles, whatsappLink } from "../data";
 
 const icons = {
-  star: GiStarMedal,
-  beat: GiMusicalNotes,
-  heart: FiHeart,
-  camera: FiCamera,
+  wedding: GiRingBox,
+  couple: FaHeart,
+  group: FaPeopleGroup,
+  school: FaGraduationCap,
+  regular: FiRepeat,
 };
 
 export default function Programs() {
@@ -23,9 +25,23 @@ export default function Programs() {
             From your first class to your big day on stage — training built for
             every occasion.
           </p>
+
+          <div className="mt-6 flex items-center justify-center gap-2 flex-wrap">
+            <span className="text-xs uppercase tracking-wide text-muted normal-case">
+              Dance Styles:
+            </span>
+            {danceStyles.map((style) => (
+              <span
+                key={style}
+                className="rounded-full border border-storm/30 bg-storm/5 px-4 py-1 text-xs text-cream/80 normal-case"
+              >
+                {style}
+              </span>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {programs.map((p, i) => {
             const Icon = icons[p.icon];
             return (
@@ -34,11 +50,11 @@ export default function Programs() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: (i % 4) * 0.1 }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
                 className="group rounded-2xl bg-surface border border-white/5 p-8 hover:border-storm/30 hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-storm text-ink">
-                  <Icon size={24} />
+                  <Icon size={22} />
                 </div>
                 <h3 className="mt-6 font-display text-xl text-cream tracking-wide">
                   {p.title}

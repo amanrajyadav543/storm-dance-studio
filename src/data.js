@@ -30,6 +30,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Programs", href: "#programs" },
+  { label: "Films", href: "#films" },
   { label: "Moments", href: "#moments" },
   { label: "Reviews", href: "#reviews" },
   { label: "Location", href: "#location" },
@@ -44,25 +45,45 @@ export const stats = [
 
 export const programs = [
   {
-    title: "Bollywood Dance",
-    desc: "High-energy Bollywood choreography classes for every age and skill level.",
-    icon: "star",
+    title: "Wedding Dance Choreography",
+    desc: "Show-stopping routines built for sangeet, baraat and every wedding stage moment.",
+    icon: "wedding",
   },
   {
-    title: "Zumba Fitness",
-    desc: "Dance-fitness sessions that make breaking a sweat feel like a party.",
-    icon: "beat",
+    title: "Couple Dance Choreography",
+    desc: "First-dance and duet routines crafted to fit your story and your song.",
+    icon: "couple",
   },
   {
-    title: "Wedding Choreography",
-    desc: "Custom-built routines for sangeet, baraat and every wedding moment that needs to shine.",
-    icon: "heart",
+    title: "Group Dance Choreography",
+    desc: "Synced, stage-ready group routines for friends, family and performance teams.",
+    icon: "group",
   },
   {
-    title: "Cinematic Shoots",
-    desc: "Professional dance video production in-house with @pintu__swami_films.",
-    icon: "camera",
+    title: "School Dance Programs",
+    desc: "Annual functions, competitions and school events choreographed start to finish.",
+    icon: "school",
   },
+  {
+    title: "Regular Dance Classes",
+    desc: "Structured weekly classes building technique and confidence for every age.",
+    icon: "regular",
+  },
+];
+
+export const danceStyles = ["Bollywood", "Rajasthani", "Punjabi"];
+
+export const filmsServices = [
+  { title: "Wedding Traditional Photography", icon: "camera" },
+  { title: "Wedding Traditional Videography", icon: "video" },
+  { title: "Wedding Cinematic Video Shoot", icon: "film" },
+  { title: "Wedding Candid Photography", icon: "candid" },
+  { title: "Pre-Wedding Shooting", icon: "prewedding" },
+  { title: "Drone Camera", icon: "drone" },
+  { title: "LED Wall", icon: "led" },
+  { title: "Instagram Wedding Reels", icon: "reels" },
+  { title: "Wedding Save the Date Poster Design", icon: "poster" },
+  { title: "Wedding Countdown Poster Design", icon: "countdown" },
 ];
 
 export const reviews = [
@@ -84,4 +105,11 @@ export const instagramEmbeds = [
   "https://www.instagram.com/p/C8oXQY0pgm2/",
   "https://www.instagram.com/p/CtbIrVxuC7P/",
   "https://www.instagram.com/p/C_nGlvfMnJc/",
+  "https://www.instagram.com/p/DcyRDaVy6qk/",
+];
+
+// Real posts from @pintu__swami_films, the studio's in-house wedding photography/videography brand.
+export const filmsEmbeds = [
+  "https://www.instagram.com/p/DbN0ZjQu2wW/",
+  "https://www.instagram.com/p/Da7vc9-uHnP/",
 ];

@@ -110,10 +110,12 @@ Message: ${form.message || "-"}`;
               className="mt-2 w-full rounded-xl border border-white/10 bg-ink px-4 py-3 text-sm text-cream outline-none focus:border-storm transition-colors"
             >
               <option value="">Select a program</option>
-              <option>Bollywood Dance</option>
-              <option>Zumba Fitness</option>
-              <option>Wedding Choreography</option>
-              <option>Cinematic Shoots</option>
+              <option>Wedding Dance Choreography</option>
+              <option>Couple Dance Choreography</option>
+              <option>Group Dance Choreography</option>
+              <option>School Dance Programs</option>
+              <option>Regular Dance Classes</option>
+              <option>Pintu Swami Films — Wedding Photography/Videography</option>
               <option>Other</option>
             </select>
           </div>
